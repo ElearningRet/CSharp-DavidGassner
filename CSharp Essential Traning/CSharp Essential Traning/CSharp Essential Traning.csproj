@@ -6,8 +6,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="BreakandContinue.cs" />
     <Compile Remove="ForEachLoop.cs" />
     <Compile Remove="ForLoops.cs" />
+    <Compile Remove="ManagingVariableVisibility.cs" />
     <Compile Remove="Program.cs" />
     <Compile Remove="ReusuableCodewithMethods.cs" />
     <Compile Remove="SwitchCommand.cs" />
@@ -15,8 +17,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="BreakandContinue.cs" />
     <None Include="ForEachLoop.cs" />
     <None Include="ForLoops.cs" />
+    <None Include="ManagingVariableVisibility.cs" />
     <None Include="Program.cs" />
     <None Include="ReusuableCodewithMethods.cs" />
     <None Include="SwitchCommand.cs" />
