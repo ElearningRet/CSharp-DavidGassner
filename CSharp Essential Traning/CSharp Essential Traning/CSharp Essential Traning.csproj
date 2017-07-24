@@ -7,22 +7,36 @@
 
   <ItemGroup>
     <Compile Remove="BreakandContinue.cs" />
+    <Compile Remove="Calculator.cs" />
+    <Compile Remove="DebugTools.cs" />
+    <Compile Remove="ExceptionHandlingwithTryandCatch.cs" />
     <Compile Remove="ForEachLoop.cs" />
     <Compile Remove="ForLoops.cs" />
+    <Compile Remove="ManagingOrderedDataWithLists.cs" />
+    <Compile Remove="ManagingUnordedDataWithDictionaries.cs" />
     <Compile Remove="ManagingVariableVisibility.cs" />
+    <Compile Remove="MultidementionalArrays.cs" />
     <Compile Remove="Program.cs" />
     <Compile Remove="ReusuableCodewithMethods.cs" />
+    <Compile Remove="SimpleArrays.cs" />
     <Compile Remove="SwitchCommand.cs" />
     <Compile Remove="WhileLoop.cs" />
   </ItemGroup>
 
   <ItemGroup>
     <None Include="BreakandContinue.cs" />
+    <None Include="Calculator.cs" />
+    <None Include="DebugTools.cs" />
+    <None Include="ExceptionHandlingwithTryandCatch.cs" />
     <None Include="ForEachLoop.cs" />
     <None Include="ForLoops.cs" />
+    <None Include="ManagingOrderedDataWithLists.cs" />
+    <None Include="ManagingUnordedDataWithDictionaries.cs" />
     <None Include="ManagingVariableVisibility.cs" />
+    <None Include="MultidementionalArrays.cs" />
     <None Include="Program.cs" />
     <None Include="ReusuableCodewithMethods.cs" />
+    <None Include="SimpleArrays.cs" />
     <None Include="SwitchCommand.cs" />
     <None Include="WhileLoop.cs" />
   </ItemGroup>
