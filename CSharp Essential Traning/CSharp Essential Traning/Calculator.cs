@@ -8,41 +8,71 @@ namespace CSharpEssentialTraning
     {
         static void Main(string[] arg)
         {
-            double value1 = 0;
-            double value2 = 0;
+            // get the vaules for the operation
+            double value1 = GetData("Enter value 1: ");
+            double value2 = GetData("Enter value 2: ");
             string operation;
 
-            Console.WriteLine("Enter value #1:");
-            value1 = Convert.ToDouble(Console.ReadLine());
+            // holds the results of the operations
+            //double result = 0;
 
-            Console.WriteLine("Enter value #2:");
-            value2 = Convert.ToDouble(Console.ReadLine());
-
-            Console.WriteLine("Choose your opprator -> (A)dd, (S)ubtract, (M)ultiply or (D)ivide");
-            operation = Convert.ToString(Console.Read());
-
-            switch (operation)
+            //Main loop - break out after completing a valid operation
+            while (true)
             {
-                case A:
-                    Console.WriteLine("{0} + {1} = {2}", value1, value2, Addition(value1, value2));
-                    break;
+                Console.WriteLine("Choose your opprator -> (A)dd, (S)ubtract, (M)ultiply or (D)ivide");
+                operation = Console.ReadLine().ToUpper();
 
-                case S:
-                    Console.WriteLine("{0} - {1} = {2}", value1, value2, Subtraction(value1, value2));
-                    break;
+                switch (operation)
+                {
+                    case "A":
+                        Console.WriteLine("{0} + {1} = {2}", value1, value2, Addition(value1, value2));
+                        break;
 
-
-                case M:
-                    Console.WriteLine("{0} * {1} = {2}",value1, value2, Multiplication(value1,value2));
-                    break;
-
-                case D:
-                    Console.WriteLine("{0} / {1} = {2}", value1, value2, Divide(value1, value2));
-                    break;
+                    case "S":
+                        Console.WriteLine("{0} - {1} = {2}", value1, value2, Subtraction(value1, value2));
+                        break;
 
 
-                default:
-                    break;
+                    case "M":
+                        Console.WriteLine("{0} * {1} = {2}", value1, value2, Multiplication(value1, value2));
+                        break;
+
+                    case "D":
+                        Console.WriteLine("{0} / {1} = {2}", value1, value2, Divide(value1, value2));
+                        break;
+
+
+                    default:
+                        Console.WriteLine("\nChoose a valid operation of A, S, M, or D");
+                        continue;
+                        //break;
+                }
+                // made it here - kick out of While-Loop
+                break;
+            }
+
+        }
+
+        static double GetData(string label)
+        {
+            double inputData; // return this
+
+            // loop until valid input is accepted
+            while (true)
+            {
+                Console.WriteLine(label);
+                string input = Console.ReadLine();
+
+                // determins when to kick out of While-Loop
+                // parses string to double if fails returns 0 (false) else returns a value (true)
+                if(Double.TryParse(input, out inputData))
+                {
+                    return inputData;
+                }
+                else
+                {
+                    Console.WriteLine("Invalid entry, try again");
+                }
             }
 
         }
@@ -64,6 +94,10 @@ namespace CSharpEssentialTraning
 
         static double Divide(double value1, double value2)
         {
+            if(value1 == 0 || value2 == 0)
+            {
+                return 0;
+            }
             return value1 / value2;
         }
         
