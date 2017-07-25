@@ -6,17 +6,26 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="AddingMultipleConstructorMethodsPOCO.cs" />
     <Compile Remove="BreakandContinue.cs" />
     <Compile Remove="Calculator.cs" />
+    <Compile Remove="CalcUtilities.cs" />
+    <Compile Remove="CustomClasses.cs" />
     <Compile Remove="DebugTools.cs" />
+    <Compile Remove="DeclaringPrivateFieldsAndPublicPropertiesPOCO.cs" />
+    <Compile Remove="DeclaringPropertiesWithShorthandGetandSetMethodsPOCO.cs" />
     <Compile Remove="ExceptionHandlingwithTryandCatch.cs" />
     <Compile Remove="ForEachLoop.cs" />
     <Compile Remove="ForLoops.cs" />
     <Compile Remove="ManagingOrderedDataWithLists.cs" />
     <Compile Remove="ManagingUnordedDataWithDictionaries.cs" />
     <Compile Remove="ManagingVariableVisibility.cs" />
+    <Compile Remove="Model\Produce.cs" />
     <Compile Remove="MultidementionalArrays.cs" />
+    <Compile Remove="OraginzingClassesWithNamespacesPOCO.cs" />
+    <Compile Remove="OverridingTOStringMethodPOCO.cs" />
     <Compile Remove="Program.cs" />
+    <Compile Remove="RepresentingDataWithPlainOldClassObjectsPOCO.cs" />
     <Compile Remove="ReusuableCodewithMethods.cs" />
     <Compile Remove="SimpleArrays.cs" />
     <Compile Remove="SwitchCommand.cs" />
@@ -24,17 +33,26 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="AddingMultipleConstructorMethodsPOCO.cs" />
     <None Include="BreakandContinue.cs" />
     <None Include="Calculator.cs" />
+    <None Include="CalcUtilities.cs" />
+    <None Include="CustomClasses.cs" />
     <None Include="DebugTools.cs" />
+    <None Include="DeclaringPrivateFieldsAndPublicPropertiesPOCO.cs" />
+    <None Include="DeclaringPropertiesWithShorthandGetandSetMethodsPOCO.cs" />
     <None Include="ExceptionHandlingwithTryandCatch.cs" />
     <None Include="ForEachLoop.cs" />
     <None Include="ForLoops.cs" />
     <None Include="ManagingOrderedDataWithLists.cs" />
     <None Include="ManagingUnordedDataWithDictionaries.cs" />
     <None Include="ManagingVariableVisibility.cs" />
+    <None Include="Model\Produce.cs" />
     <None Include="MultidementionalArrays.cs" />
+    <None Include="OraginzingClassesWithNamespacesPOCO.cs" />
+    <None Include="OverridingTOStringMethodPOCO.cs" />
     <None Include="Program.cs" />
+    <None Include="RepresentingDataWithPlainOldClassObjectsPOCO.cs" />
     <None Include="ReusuableCodewithMethods.cs" />
     <None Include="SimpleArrays.cs" />
     <None Include="SwitchCommand.cs" />
